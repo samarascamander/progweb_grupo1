@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <div class="box header">
-            <img class="image" src="/img/man-using-laptop.jpg" alt="" width="600px" height="150px" style="float: left;">
+            <img class="image" src="https://bit.ly/2EKpsIo" alt="" width="600px" height="150px" style="float: left;">
             <h1 style="text-align: right; font-size: 60px; margin: 0px 0px;">Página de Projetos</h1>
             <h2 style="text-align: right; font-size: 30px; margin: 20px 0px;">Fatec Taquaritinga</h2>
         </div>
@@ -20,9 +20,10 @@
                 <h1>Integrantes</h1>
                 <a href wm-nav="integrantes/alunoteste0.html">DEV00 - Aluno</a> <br>
                 <a href wm-nav="integrantes/Samara.html">DEV01 - Deise Samara de Oliveira</a> <br>
+                <a href wm-nav="integrantes/Italo_Lemos.html">DEV00 - Ítalo Lemos Gasparo</a> <br>
                 <a href wm-nav="integrantes/alunoteste2.html">DEV02 - Aluno</a> <br>
                 <a href wm-nav="integrantes/alunoteste3.html">DEV03 - Aluno</a> <br>
-                <a href wm-nav="integrantes/alunoteste4.html">DEV04 - Aluno</a> <br>
+                <a href wm-nav="integrantes/Marianee.html">DEV04 - Marianee</a> <br>
                 <a href wm-nav="integrantes/alunoteste5.html">DEV05 - Aluno</a> <br>
                 <h1>Avaliações</h1>
                 <a href wm-nav="/avaliacao1.html">1º Bim - Avaliação 1</a> <br>
@@ -31,16 +32,16 @@
         </div>
         <div class="box content" id="conteudo">
             <h1> Content </p>
-                <img class="image" src="/img/teacher.png" alt="" width="400px" height="300px"
+                <img class="image" src="https://bit.ly/342SLOQ" alt="" width="400px" height="300px"
                     style="display: block; margin-left: auto; margin-right: auto;" ;>
         </div>
         <div class="box sidebar2">
             <h2 style="text-align: center; margin-top: 0px;">Be a Profissional</h2>
-            <img class="image" src="/img/sidebar2.jpg" alt="" width="100px" height="500px"
+            <img class="image" src="https://bit.ly/349rkDf" alt="" width="100px" height="500px"
                 style="display: block; margin-left: auto; margin-right: auto;" ;>
         </div>
         <div class="box footer">
-            <img class="image" src="/img/people-group.jpg" alt="" width="1250px" height="300px" style="float: left;">
+            <img class="image" src="https://bit.ly/2G55kkM" alt="" width="1250px" height="300px" style="float: left;">
         </div>
     </div>
 
@@ -48,7 +49,7 @@
         document.querySelectorAll('[wm-nav]').forEach(link => {
             const conteudo = document.getElementById('conteudo')
 
-            link.onclick = function (e) {
+            link.onclick = function(e) {
                 e.preventDefault()
                 fetch(link.getAttribute('wm-nav'))
                     .then(resp => resp.text())
